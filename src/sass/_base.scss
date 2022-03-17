@@ -2,6 +2,7 @@
 
 // MEDIA
 
+$bp-phone: 31.25em; // 320px
 * {
   margin: 0;
   padding: 0;
@@ -34,6 +35,10 @@ body {
   transform: translate(-50%, -50%);
   border: 2px solid #7fcfda;
   border-radius: 2rem;
+  @media only screen and (max-width: $bp-phone) {
+    width: 35rem;
+    height: 60rem;
+  }
 
   background-color: #2a354d;
   display: flex;
