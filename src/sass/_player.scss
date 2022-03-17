@@ -1,0 +1,74 @@
+%template {
+  height: 20rem;
+  width: 100%;
+  //   border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.you {
+  @extend %template;
+
+  transform: rotate(360deg);
+  &__img {
+    height: 15rem;
+    width: auto;
+    // animation: shake 2s linear infinite;
+  }
+
+  &__list {
+    height: 25rem;
+    width: 7rem;
+    margin-right: 1rem;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  &__item {
+    height: 7rem;
+    width: 7rem;
+    &__btn {
+      height: 7rem;
+      width: 7rem;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+    }
+    &__img {
+      height: 7rem;
+      width: 7rem;
+    }
+  }
+}
+.oponent {
+  @extend %template;
+
+  transform: rotate(180deg);
+  &__img {
+    height: 15rem;
+    width: auto;
+    // animation: shake2 2s linear infinite;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: scale(1.05);
+  }
+  30% {
+    transform: scale(0.9);
+  }
+  60% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
