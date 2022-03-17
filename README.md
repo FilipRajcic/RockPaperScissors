@@ -1,1 +1,1 @@
-Rock Papper Scissors App
+Rock Paper Scissors App
